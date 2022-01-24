@@ -1,0 +1,333 @@
+/*
+ * General/Utility Styles
+*/
+
+* {
+  -moz-box-sizing: border-box; /* Firexfox */
+  -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+  box-sizing: border-box; /* IE */
+}
+
+body {
+  margin: 0;
+  background: rgb(245, 245, 245);
+  font-family: 'Open Sans', arial, sans-serif;
+  font-size: 0.875rem;
+  color: rgb(86, 90, 92);
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+a {
+  font-weight: bold;
+  color: rgb(255, 89, 95);
+  text-decoration: none;
+}
+
+strong {
+  font-weight: 600;
+}
+
+/*
+ * Button styles
+*/
+
+.button {
+  background: rgb(255, 89, 95);
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 0.75rem 5rem;
+  border-bottom: 1px solid rgb(227, 25, 29);
+  border-radius: 2px;
+  width: 95%;
+  margin: 0 auto;
+}
+
+/* Whole profile */
+.information .profile {
+  margin-bottom: 24px;
+}
+
+/* Logo and First dog code */
+header {
+  background: #FFF;
+}
+
+header .logo {
+  border-right: 1px solid #DCE0E0;
+}
+
+.hero img {
+  width: 100%;
+}
+
+.hero {
+  line-height: 0;
+}
+
+/* Owner details */
+.information {
+  background: #FFF;
+  text-align: center;
+  padding: 25px;
+  border-bottom: 1px solid #DCE0E0;
+}
+
+.information .owner-details img {
+  border-radius: 50%;
+  margin-bottom: 6px;
+}
+
+.information h2.relationship, .information h2.name {
+  color: #909597;
+  margin-bottom: 3px;
+}
+
+.information h2.name {
+  font-weight: bold;
+}
+
+.information h1 {
+  margin-bottom: 5px;
+}
+
+/* Pet details */
+h1 {
+  font-size: 22px;
+  color: #666A6C;
+}
+
+.information .icons {
+  float: left;
+  width: 33.3%;
+}
+
+.information .icons img {
+  margin-bottom: 3px;
+  height: 27px;
+}
+
+/* Booking details */
+.information .booking h2 {
+  font-weight: 600;
+  font-size: 22px;
+  margin-bottom: 13px;
+}
+
+.information p.location {
+margin-bottom: 20px;
+}
+
+.information h2.price time {
+  font-size: 16px;
+}
+
+section {
+  display: block;
+}
+
+/* About section */
+.about {
+  text-align: center;
+  border-bottom: 1px solid #DCE0E0;
+  padding: 28px;
+}
+
+.about h3 {
+  font-weight: bold;
+  font-size: 16px;
+  color: ##565A5C;
+  padding: 30px
+}
+
+.about p {
+  font-size: 13px;
+  color: ##565A5C;
+  line-height: 22px;
+  text-align: left;
+}
+
+.about p.contact-owner {
+  padding-top: 15px;
+  text-align: center;
+  color: #FF595F;
+}
+
+/* Care section */
+.care {
+  text-align: left;
+  padding: 28px;
+  border-bottom: 1px solid #DCE0E0;
+}
+
+.care h3 {
+  margin-bottom: 7px;
+}
+
+.care food, .care time, .care toy {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.care p {
+  padding: 2px;
+}
+
+/* Games section */
+.games {
+  padding: 28px;
+  border-bottom: 1px solid #DCE0E0;
+}
+
+.games h3 {
+  margin-bottom: 10px;
+}
+
+.games .icons-games img {
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+.games .icons-games img, .games .icons-games p {
+  margin-bottom: 10px;
+}
+
+.games .icons-games p {
+  display: inline;
+}
+
+/* Images section */
+.images {
+  padding: 28px;
+}
+
+.images img {
+  margin-top: 8px;
+  width: 440px;
+}
+
+/* Media Queries */
+@media only screen and (min-width: 1060px) {
+
+/* Profile, Owner and Pet Details, and Booking */
+  .column {
+    float: left;
+  }
+
+  .information .profile {
+    width: 660px;
+    border-right: 1px solid #DCE0E0;
+  }
+
+  .information .booking {
+    width: 380px;
+  }
+
+  .information .owner-details {
+    width: 30%;
+  }
+
+  .information .pet-details {
+    width: 70%;
+    text-align: left;
+  }
+
+  .container {
+    width: 1040px;
+    margin: 0 auto;
+  }
+
+  .button {
+    width: 275px;
+    margin: auto;
+  }
+
+  .information h1 {
+    margin-bottom: 11px;
+  }
+
+  .information h2 {
+    margin-bottom: 3px;
+  }
+
+  .information .pet-details .icons {
+    width: inherit;
+    margin-right: 50px;
+  }
+
+  .information .pet-details .icons img {
+    display: block;
+    margin: 3px auto 3px
+  }
+
+  .information {
+    border-bottom: 1px solid #DCE0E0;
+  }
+
+/* About section */
+  .about {
+    width: 1040px;
+    margin: 0 auto;
+  }
+
+  .about p.contact-owner {
+    color: #FF595F;
+    text-align: left;
+  }
+
+  /* Care section */
+  .care {
+    width: 1040px;
+    margin: 0 auto;
+  }
+
+  .care h3 {
+    float: left;
+  }
+
+  .care p {
+    padding-left: 250px;
+  }
+
+  /* Games section */
+  .games {
+    width: 1040px;
+    margin: 0 auto;
+  }
+
+  .games h3 {
+    float: left;
+  }
+
+  .games .icons-games {
+    padding-left: 277px;
+  }
+
+  /* Images section */
+  .images {
+    margin: 0 auto;
+    border-bottom: 1px solid #DCE0E0;
+  }
+
+  .images img {
+    height: 400px;
+    width: 275px;
+    margin-top: 28px;
+    margin-right: 27px;
+    margin-bottom: 30px;
+  }
+
+  .images .dog1 {
+    margin-left: 375px;
+  }
+
+}
+
+
+
+
